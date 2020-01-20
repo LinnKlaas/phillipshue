@@ -15,4 +15,5 @@ Den Code für Node Red findet man in der Github Repository taramonheim/phillipsh
 ```json 
 komplett.json
 ```
-[Hier der Link](komplett.json) 
+[Hier der Link zu json File](komplett.json) 
+
