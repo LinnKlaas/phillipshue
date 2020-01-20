@@ -1,4 +1,4 @@
-# phillipshue-
+# phillipshue
 Linn, Ligia, Marius, Noah und Tara 
 
 <h1 align="center">Dokumentation Phillips Hue</h1>
