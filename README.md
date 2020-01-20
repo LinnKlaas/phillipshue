@@ -10,3 +10,7 @@ Technisches Grundlagenprojekt bei Martin Schneider.
 **Zweites Projekt**: Verbinden des Phillip Hue mit dem Rasperry Pi, dem Mac,  
 sowie Steuerung der Helligkeit und Farbe durch Node Red über ein Midi Gerät, dass 
 mit dem Rasperry Pi verbunden ist.
+
+```json 
+komplett.json
+``
