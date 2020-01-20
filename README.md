@@ -11,6 +11,7 @@ Technisches Grundlagenprojekt bei Martin Schneider.
 sowie Steuerung der Helligkeit und Farbe durch Node Red über ein Midi Gerät, dass 
 mit dem Rasperry Pi verbunden ist.
 
+Den Code für Node Red findet man in der Github Repository taramonheim/ 
 ```json 
 komplett.json
-``
+```
