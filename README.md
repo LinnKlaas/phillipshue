@@ -7,7 +7,7 @@ Linn, Ligia, Marius, Noah und Tara
 
 Technisches Grundlagenprojekt bei Martin Schneider. 
 
-**Zweites Projekt**: Verbinden des Phillip Hue mit dem Rasperry Pi, dem Mac,  
+**Zweites Projekt**: Verbinden des Philips Hue mit dem Rasperry Pi, dem Mac,  
 sowie Steuerung der Helligkeit und Farbe durch Node Red über ein Midi Gerät, dass 
 mit dem Rasperry Pi verbunden ist.
 
@@ -37,7 +37,7 @@ balena etcher software auf den Pi geflasht.
 
 <img src="balena.png"/>
 
-3. Durch das Programm VNC Viewer und der Ip Adresse unseres Pis (192.168.1.238) haben wir die Ansicht des Rasperry Pi auf dem Mac Computer angezeigt bekommen. So konnten wir auf dem Mac arbeiten, während die Änderungen parallel auf dem Pi passierten. man kann also in der Mac Konsole arbeiten, deployen und node red auf dem Pi refreshen. 
+3. Durch das Programm VNC Viewer und der Ip Adresse unseres Pis (192.168.1.238) haben wir die Ansicht des Rasperry Pi auf dem Mac Computer angezeigt bekommen. So konnten wir auf dem Mac arbeiten, während die Änderungen parallel auf dem Pi passierten. Man kann also in der Mac Konsole arbeiten, deployen und node red auf dem Pi refreshen. 
 
 <img src="vncviewer.png"/>
 
@@ -79,15 +79,15 @@ Benutzer: pi kennwort: 12kabelfrei
 
  <img src="gruppelampe.png"/>
 
-8. Auf Node Red setzten wir diesen key bei <kbd>deconz input</kbd> ein und wählen die Gruppe wie oben in dem Screenshot gezeigt aus. 
+8. Auf Node Red setzten wir diesen key bei <kbd>deconz input</kbd> ein und wählen die Gruppe, wie oben in dem Screenshot gezeigt, aus. 
 
 >wichtig: nicht vergessen auf node red zu deployen
 
 Hier ein paar Beispiel Flows des Conbee Sticks auf nodered: [ConbeeStickFlows](https://flows.nodered.org/node/node-red-contrib-deconz)
 
-9. Als Output haben wir die Brightness gewählt und erstmal einen slider mit dieser Brightness verknüpft um auszuprobieren, ob das ganze funktioniert. Den Slider konfigrieren wir in einem Range von 0 - 100. In der rechten Leiste von Node Red könenn wir uns unter <kbd>dashboard</kbd> das Ganze anzeigen lassen. 
+9. Als Output haben wir die Brightness gewählt und erstmal einen Slider mit dieser Brightness verknüpft um auszuprobieren, ob das ganze funktioniert. Den Slider konfigurieren wir in einem Range von 0 - 100. In der rechten Leiste von Node Red können wir uns unter <kbd>dashboard</kbd> das ganze anzeigen lassen. 
 
-10. Um das ganze mit einem Midi Gerät zu verbinden, haben wir aus der node library und der collection prototyping-lab von unserem Dozenten Martin Schneider den Flow kopiert und in node red eingesetzt. Als Midi Gerät haben wir ein Dj Pult mit USB Anschluss gewählt. 
+10. Um das alles mit einem Midi Gerät zu verbinden, haben wir aus der node library und der collection prototyping-lab von unserem Dozenten Martin Schneider den Flow kopiert und in node red eingesetzt. Als Midi Gerät haben wir ein Dj Pult mit USB Anschluss gewählt. 
 
 Hier einmal der Link zu den Midi Geräten:
 
@@ -99,13 +99,13 @@ Hier einmal der Link zu den Midi Geräten:
 <img src="noderedimport.png"/>
 <img src="noderedcode.png"/>
 
-In der <a href="komplett.json">JSON</a> Datei findet man die Struktur unseres Flows und kann sich wenn man die einzelnden nodes anklickt die genauen properties anzeigen lassen.
+In der <a href="komplett.json">JSON</a> Datei findet man die Struktur unseres Flows und kann sich, wenn man die einzelnden nodes anklickt, die genauen properties anzeigen lassen.
 
 11. In dem Html Code der Funktion <kbd>Vorlage</kbd> haben wir den localhost manuell geändert. 
 
 <img src="locationhost.png"/>
 
-Den Output des Dj Pults kann man sich manuell im Browser Fenster anzeigen lassen. So findet man heraus, wie die verschiedenen Tasten oder Dreher attributiert worden sind. Diese Siete können wir aufrufen indem wir die Ip Adresse unseres Pis mit der des Midi Geräts in die Suchleiste eingeben. In unserem Fall: <kbd>192.168.1.238:1880</kbd>
+Den Output des Dj Pults kann man sich manuell im Browser Fenster anzeigen lassen. So findet man heraus, wie die verschiedenen Tasten oder Dreher attributiert worden sind. Diese Seite können wir aufrufen, indem wir die Ip Adresse unseres Pis mit der des Midi Geräts in die Suchleiste eingeben. In unserem Fall: <kbd>192.168.1.238:1880</kbd>
 
 In unserem Fall: der Drehknopf hatte die Eigenschaft: control change und die Drückknöpfe 
 octave#. 
@@ -128,7 +128,7 @@ Dafür stellt man bei der zweiten <kbd>switch</kbd> Funktion den Befehl <i>msg.p
 //Strukturieren
 //Wie der dimm Befehl verbunden wurde
 //range 
-//wie wir die Farbe eingestellt haben (kann man sich in dem komplett.flow anschauen // wenn ihr den Flow in node red einfach click and drag einsetzt, baut scih der automatisch auf und ihr könnt das rekonstruieren. ) 
+//wie wir die Farbe eingestellt haben (kann man sich in dem komplett.flow anschauen // wenn ihr den Flow in node red einfach click and drag einsetzt, baut sich der automatisch auf und ihr könnt das rekonstruieren. ) 
 
 
 
